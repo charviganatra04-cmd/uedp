@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+storybook-static/
+dist/
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+.env
+.env.*

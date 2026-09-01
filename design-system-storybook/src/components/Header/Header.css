@@ -1,0 +1,61 @@
+/* Header Component CSS */
+.uedp-header {
+  background-color: var(--uedp-slate-900, #0F172A);
+  border-bottom: 1px solid var(--uedp-slate-800, #1E293B);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.uedp-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-gap-4, 16px);
+}
+
+.uedp-header__logo {
+  background: linear-gradient(135deg, var(--uedp-cyan-500, #06B6D4) 0%, #3B82F6 100%);
+  color: #0F172A;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: var(--uedp-border-radius-rounded-lg, 8px);
+  letter-spacing: 0.05em;
+}
+
+.uedp-header__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--uedp-base-white, #FFFFFF);
+  margin: 0;
+}
+
+.uedp-header__subtitle {
+  font-size: 12px;
+  color: var(--uedp-slate-400, #94A3B8);
+}
+
+.uedp-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uedp-header__status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--uedp-emerald-500, #10B981);
+  box-shadow: 0 0 10px var(--uedp-emerald-500, #10B981);
+}
+
+.uedp-header__version {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--uedp-slate-400, #94A3B8);
+  background-color: var(--uedp-slate-800, #1E293B);
+  padding: 4px 8px;
+  border-radius: 6px;
+}

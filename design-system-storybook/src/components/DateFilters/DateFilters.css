@@ -1,0 +1,69 @@
+/* DateFilters CSS - Figma Layer Name: "Date filters" */
+.uedp-date-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--uedp-gap-gap-4, 16px);
+  background-color: var(--uedp-slate-900, #0F172A);
+  border: 1px solid var(--uedp-slate-800, #1E293B);
+  border-radius: var(--uedp-border-radius-rounded-xl, 12px);
+  padding: var(--uedp-padding-p-4, 16px);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.uedp-date-filters__presets {
+  display: flex;
+  gap: var(--uedp-gap-gap-2, 8px);
+  background-color: var(--uedp-slate-800, #1E293B);
+  padding: 4px;
+  border-radius: var(--uedp-border-radius-rounded-lg, 8px);
+}
+
+.uedp-date-filters__preset-btn {
+  background: transparent;
+  color: var(--uedp-slate-400, #94A3B8);
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--uedp-border-radius-rounded-md, 6px);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.uedp-date-filters__preset-btn:hover {
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+.uedp-date-filters__preset-btn--active {
+  background-color: var(--uedp-cyan-500, #06B6D4);
+  color: #0F172A;
+  font-weight: 700;
+}
+
+.uedp-date-filters__range {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-gap-2, 8px);
+}
+
+.uedp-date-filters__input {
+  background-color: var(--uedp-slate-800, #1E293B);
+  color: var(--uedp-base-white, #FFFFFF);
+  border: 1px solid var(--uedp-slate-700, #334155);
+  border-radius: var(--uedp-border-radius-rounded-md, 6px);
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.uedp-date-filters__input:focus {
+  border-color: var(--uedp-cyan-500, #06B6D4);
+}
+
+.uedp-date-filters__sep {
+  color: var(--uedp-slate-500, #64748B);
+  font-size: 12px;
+  font-weight: 600;
+}

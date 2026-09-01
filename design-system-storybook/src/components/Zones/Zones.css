@@ -1,0 +1,95 @@
+/* Zones Component CSS - Figma Layer Name: "Zones" */
+.uedp-zones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--uedp-gap-gap-4, 16px);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.uedp-zones__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--uedp-slate-400, #94A3B8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.uedp-zones__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--uedp-gap-gap-4, 16px);
+}
+
+.uedp-zones__card {
+  background-color: var(--uedp-slate-900, #0F172A);
+  border: 1px solid var(--uedp-slate-800, #1E293B);
+  border-radius: var(--uedp-border-radius-rounded-xl, 12px);
+  padding: var(--uedp-padding-p-4, 16px);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.uedp-zones__card:hover {
+  border-color: var(--uedp-cyan-500, #06B6D4);
+  transform: translateY(-2px);
+}
+
+.uedp-zones__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.uedp-zones__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+.uedp-zones__tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--uedp-border-radius-rounded-full, 9999px);
+}
+
+.uedp-zones__tag--optimal {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--uedp-emerald-500, #10B981);
+}
+
+.uedp-zones__tag--degraded {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+}
+
+.uedp-zones__tag--maintenance {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--uedp-red-500, #EF4444);
+}
+
+.uedp-zones__metrics {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--uedp-slate-800, #1E293B);
+  padding-top: 10px;
+}
+
+.uedp-zones__metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.uedp-zones__label {
+  font-size: 11px;
+  color: var(--uedp-slate-500, #64748B);
+}
+
+.uedp-zones__value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--uedp-slate-200, #E2E8F0);
+  margin-top: 2px;
+}

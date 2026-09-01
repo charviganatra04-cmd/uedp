@@ -1,0 +1,124 @@
+/* Map Component CSS - Figma Layer Name: "Map" */
+.uedp-map {
+  background-color: var(--uedp-slate-900, #0F172A);
+  border: 1px solid var(--uedp-slate-800, #1E293B);
+  border-radius: var(--uedp-border-radius-rounded-2xl, 16px);
+  padding: var(--uedp-padding-p-6, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--uedp-gap-gap-4, 16px);
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.uedp-map__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uedp-map__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+.uedp-map__controls {
+  display: flex;
+  gap: 8px;
+}
+
+.uedp-map__badge {
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--uedp-slate-800, #1E293B);
+  color: var(--uedp-slate-300, #CBD5E1);
+  padding: 4px 10px;
+  border-radius: var(--uedp-border-radius-rounded-full, 9999px);
+}
+
+.uedp-map__badge--live {
+  background-color: rgba(6, 182, 212, 0.15);
+  color: var(--uedp-cyan-500, #06B6D4);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.uedp-map__viewport {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-color: #090D16;
+  border-radius: var(--uedp-border-radius-rounded-xl, 12px);
+  border: 1px solid var(--uedp-slate-800, #1E293B);
+  overflow: hidden;
+}
+
+.uedp-map__svg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.uedp-map__marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.uedp-map__marker--active {
+  background-color: var(--uedp-cyan-500, #06B6D4);
+  box-shadow: 0 0 12px var(--uedp-cyan-500, #06B6D4);
+}
+
+.uedp-map__marker--warning {
+  background-color: #F59E0B;
+  box-shadow: 0 0 12px #F59E0B;
+}
+
+.uedp-map__marker--offline {
+  background-color: var(--uedp-red-500, #EF4444);
+  box-shadow: 0 0 12px var(--uedp-red-500, #EF4444);
+}
+
+.uedp-map__pulse {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  opacity: 0.7;
+  animation: mapPulse 2s infinite;
+}
+
+@keyframes mapPulse {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.uedp-map__tooltip {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--uedp-slate-800, #1E293B);
+  color: var(--uedp-base-white, #FFFFFF);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.uedp-map__marker:hover .uedp-map__tooltip {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+/* Container Component CSS */
+.uedp-container {
+  width: 100%;
+  padding-left: var(--uedp-padding-p-6, 24px);
+  padding-right: var(--uedp-padding-p-6, 24px);
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.uedp-container--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uedp-container--max-sm { max-width: 640px; }
+.uedp-container--max-md { max-width: 768px; }
+.uedp-container--max-lg { max-width: 1024px; }
+.uedp-container--max-xl { max-width: 1280px; }
+.uedp-container--max-7xl { max-width: var(--uedp-max-w-max-w-7xl, 80rem); }
+.uedp-container--max-full { max-width: 100%; }

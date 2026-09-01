@@ -1,0 +1,88 @@
+/* Component 315 CSS - Figma Layer Name: "Component 315" */
+.uedp-component-315 {
+  background-color: var(--uedp-slate-900, #0F172A);
+  border: 1px solid var(--uedp-slate-800, #1E293B);
+  border-radius: var(--uedp-border-radius-rounded-xl, 12px);
+  padding: var(--uedp-padding-p-4, 16px);
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-gap-4, 16px);
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.uedp-component-315__avatar-wrap {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.uedp-component-315__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--uedp-slate-700, #334155);
+}
+
+.uedp-component-315__status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #0F172A;
+}
+
+.uedp-component-315__status--online {
+  background-color: var(--uedp-emerald-500, #10B981);
+}
+
+.uedp-component-315__status--busy {
+  background-color: var(--uedp-red-500, #EF4444);
+}
+
+.uedp-component-315__status--offline {
+  background-color: var(--uedp-slate-500, #64748B);
+}
+
+.uedp-component-315__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.uedp-component-315__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--uedp-base-white, #FFFFFF);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uedp-component-315__role {
+  font-size: 12px;
+  color: var(--uedp-slate-400, #94A3B8);
+  margin-top: 2px;
+}
+
+.uedp-component-315__btn {
+  background-color: var(--uedp-slate-800, #1E293B);
+  color: var(--uedp-cyan-500, #06B6D4);
+  border: 1px solid var(--uedp-cyan-500, #06B6D4);
+  border-radius: var(--uedp-border-radius-rounded-lg, 8px);
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.uedp-component-315__btn:hover {
+  background-color: var(--uedp-cyan-500, #06B6D4);
+  color: #0F172A;
+}
