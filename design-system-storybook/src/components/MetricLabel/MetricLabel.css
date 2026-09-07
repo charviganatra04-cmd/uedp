@@ -1,0 +1,78 @@
+/* Figma Node: node-id=103-506 */
+/* Component: MetricLabel (KPI card title & stat header typography) */
+
+.uedp-metric-label {
+  display: inline-block;
+  font-family: inherit;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+/* Uppercase tracking option */
+.uedp-metric-label--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Weights */
+.uedp-metric-label--weight-normal {
+  font-weight: 400;
+}
+
+.uedp-metric-label--weight-medium {
+  font-weight: 500;
+}
+
+.uedp-metric-label--weight-semibold {
+  font-weight: 600;
+}
+
+.uedp-metric-label--weight-bold {
+  font-weight: 700;
+}
+
+/* Sizes */
+.uedp-metric-label--sm {
+  font-size: 0.75rem; /* 12px */
+}
+
+.uedp-metric-label--md {
+  font-size: 0.875rem; /* 14px */
+}
+
+.uedp-metric-label--lg {
+  font-size: 1.125rem; /* 18px - matches Figma node 103-506 */
+}
+
+.uedp-metric-label--xl {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Color Variants bound to Figma Design Tokens (matching node 103-506 4-state stack) */
+
+/* State 1: Muted / Slate (Top state in node 103-506) */
+.uedp-metric-label--muted {
+  color: var(--uedp-slate-400, #94A3B8);
+}
+
+/* State 2: Secondary / Medium slate (Second state in node 103-506) */
+.uedp-metric-label--secondary {
+  color: var(--uedp-slate-500, #64748B);
+}
+
+/* State 3: Dark / Charcoal (Third state in node 103-506 - for light background cards) */
+.uedp-metric-label--dark {
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+/* State 4: White / High-contrast (Fourth state in node 103-506 - for dark background focus) */
+.uedp-metric-label--white {
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+/* Primary / Adaptive fallback */
+.uedp-metric-label--primary {
+  color: var(--uedp-slate-200, #E2E8F0);
+}
