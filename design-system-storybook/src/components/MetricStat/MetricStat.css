@@ -1,0 +1,119 @@
+/* Figma Node: node-id=66-100 (Layer: "Frame 18/Frame 13") */
+/* Component: MetricStat (Stat title + Big Numeric Metric display) */
+
+.uedp-metric-stat {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.uedp-metric-stat--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.uedp-metric-stat--horizontal {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* Header row (Label + optional TrendBadge/Action) */
+.uedp-metric-stat__header {
+  display: flex;
+  align-items: center;
+  gap: var(--uedp-gap-2, 8px);
+  width: 100%;
+}
+
+/* Label typography */
+.uedp-metric-stat__label {
+  color: var(--uedp-slate-300, #CBD5E1);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Value row */
+.uedp-metric-stat__value-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: var(--uedp-gap-1, 4px);
+  margin-top: var(--uedp-gap-2, 8px);
+}
+
+/* Large numeric display */
+.uedp-metric-stat__value {
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+/* Affixes */
+.uedp-metric-stat__prefix,
+.uedp-metric-stat__suffix {
+  font-size: 0.6em;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* Sizes */
+.uedp-metric-stat--sm .uedp-metric-stat__label {
+  font-size: 0.875rem; /* 14px */
+}
+.uedp-metric-stat--sm .uedp-metric-stat__value {
+  font-size: 1.5rem; /* 24px */
+}
+
+.uedp-metric-stat--md .uedp-metric-stat__label {
+  font-size: 1.125rem; /* 18px - matches Figma node 66-100 */
+}
+.uedp-metric-stat--md .uedp-metric-stat__value {
+  font-size: 2.25rem; /* 36px - matches Figma node 66-100 "843" */
+}
+
+.uedp-metric-stat--lg .uedp-metric-stat__label {
+  font-size: 1.25rem; /* 20px */
+}
+.uedp-metric-stat--lg .uedp-metric-stat__value {
+  font-size: 3rem; /* 48px */
+}
+
+/* Value Color Variants bound to Figma Design Tokens */
+
+/* Variant: Cyan / Teal (Exact match for node 66-100 "843") */
+.uedp-metric-stat--cyan .uedp-metric-stat__value {
+  color: var(--uedp-cyan-700, #0E7490);
+}
+
+/* Variant: White (High contrast dark theme) */
+.uedp-metric-stat--white .uedp-metric-stat__value {
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+/* Variant: Blue */
+.uedp-metric-stat--blue .uedp-metric-stat__value {
+  color: var(--uedp-blue-600, #2563EB);
+}
+
+/* Variant: Green / Success */
+.uedp-metric-stat--green .uedp-metric-stat__value {
+  color: var(--uedp-green-600, #16A34A);
+}
+
+/* Variant: Red / Alert */
+.uedp-metric-stat--red .uedp-metric-stat__value {
+  color: var(--uedp-red-600, #DC2626);
+}
+
+/* Variant: Amber */
+.uedp-metric-stat--amber .uedp-metric-stat__value {
+  color: var(--uedp-amber-600, #D97706);
+}
+
+/* Variant: Purple */
+.uedp-metric-stat--purple .uedp-metric-stat__value {
+  color: var(--uedp-violet-600, #7C3AED);
+}
