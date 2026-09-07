@@ -1,0 +1,128 @@
+/* Figma Node: node-id=66-120 (Layer name: "Component 2") */
+/* Component: MetricAvatar (Circular KPI / Activity Avatar) */
+
+.uedp-metric-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: var(--uedp-rounded-full, 9999px);
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional subtle border */
+.uedp-metric-avatar--bordered {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sizes */
+.uedp-metric-avatar--sm {
+  width: 36px;
+  height: 36px;
+}
+
+.uedp-metric-avatar--sm svg,
+.uedp-metric-avatar--sm .uedp-metric-avatar__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.uedp-metric-avatar--md {
+  width: 48px;
+  height: 48px;
+}
+
+.uedp-metric-avatar--md svg,
+.uedp-metric-avatar--md .uedp-metric-avatar__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.uedp-metric-avatar--lg {
+  width: 56px;
+  height: 56px;
+}
+
+.uedp-metric-avatar--lg svg,
+.uedp-metric-avatar--lg .uedp-metric-avatar__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.uedp-metric-avatar--xl {
+  width: 64px;
+  height: 64px;
+}
+
+.uedp-metric-avatar--xl svg,
+.uedp-metric-avatar--xl .uedp-metric-avatar__icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Color Variants bound to Figma Tokens (Matching Node 66-120 "Component 2") */
+
+/* Variant: Blue (Circle 1: Open Box) */
+.uedp-metric-avatar--blue {
+  background-color: var(--uedp-blue-100, #DBEAFE);
+  color: var(--uedp-blue-600, #2563EB);
+}
+
+.uedp-metric-avatar--blue:hover {
+  background-color: var(--uedp-blue-200, #BFDBFE);
+}
+
+/* Variant: Red / Maroon (Circle 2: Clipboard) */
+.uedp-metric-avatar--red {
+  background-color: var(--uedp-red-100, #FEE2E2);
+  color: var(--uedp-red-900, #7F1D1D);
+}
+
+.uedp-metric-avatar--red:hover {
+  background-color: var(--uedp-red-200, #FECACA);
+}
+
+/* Variant: Green (Circle 3: Clock) */
+.uedp-metric-avatar--green {
+  background-color: var(--uedp-green-100, #DCFCE7);
+  color: var(--uedp-green-700, #15803D);
+}
+
+.uedp-metric-avatar--green:hover {
+  background-color: var(--uedp-green-200, #BBF7D0);
+}
+
+/* Variant: Amber / Warning */
+.uedp-metric-avatar--amber {
+  background-color: var(--uedp-amber-100, #FEF3C7);
+  color: var(--uedp-amber-700, #B45309);
+}
+
+/* Variant: Purple */
+.uedp-metric-avatar--purple {
+  background-color: var(--uedp-violet-100, #EDE9FE);
+  color: var(--uedp-violet-700, #6D28D9);
+}
+
+/* Variant: Neutral */
+.uedp-metric-avatar--neutral {
+  background-color: var(--uedp-gray-100, #F3F4F6);
+  color: var(--uedp-gray-700, #374151);
+}
+
+/* Icon inner container */
+.uedp-metric-avatar__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uedp-metric-avatar__icon svg {
+  display: block;
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
