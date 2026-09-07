@@ -12,3 +12,4 @@ export * from './components/ProductivityCard/ProductivityCard';
 export * from './components/TaskDistributionCard/TaskDistributionCard';
 export * from './components/SidebarNav/SidebarNav';
 export * from './components/UserProfileCard/UserProfileCard';
+export * from './components/NavPillItem/NavPillItem';
