@@ -1,0 +1,10 @@
+{
+  "name": "uedp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd design-system-storybook && npm install && npm run build",
+    "dev": "npm run --prefix design-system-storybook dev",
+    "storybook": "npm run --prefix design-system-storybook storybook"
+  }
+}

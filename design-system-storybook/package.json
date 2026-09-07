@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsc && vite build",
+    "build": "storybook build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "generate-tokens": "node scripts/generate-tokens.js",
