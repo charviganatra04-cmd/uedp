@@ -13,3 +13,4 @@ export * from './components/TaskDistributionCard/TaskDistributionCard';
 export * from './components/SidebarNav/SidebarNav';
 export * from './components/UserProfileCard/UserProfileCard';
 export * from './components/NavPillItem/NavPillItem';
+export * from './components/KPICard/KPICard';
