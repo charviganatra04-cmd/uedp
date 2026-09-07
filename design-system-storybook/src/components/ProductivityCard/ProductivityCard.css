@@ -1,0 +1,120 @@
+/* Figma Node: node-id=76-34 (Layer: "Background+Border+Shadow") */
+/* Component: ProductivityCard (KPI Productivity Analytics Pie Chart Card) */
+
+.uedp-productivity-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-radius: var(--uedp-rounded-3xl, 24px);
+  padding: 32px 36px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-family: inherit;
+  color: var(--uedp-slate-900, #0F172A);
+  width: 100%;
+  max-width: 440px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uedp-productivity-card:hover {
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Header */
+.uedp-productivity-card__header {
+  margin-bottom: 24px;
+}
+
+.uedp-productivity-card__title {
+  font-size: 1.625rem; /* 26px */
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Content Body (Chart + Legend) */
+.uedp-productivity-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+
+/* Chart Canvas Wrapper */
+.uedp-productivity-card__chart-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.uedp-productivity-card__svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.04));
+}
+
+.uedp-productivity-card__slice {
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  transform-origin: center;
+}
+
+.uedp-productivity-card__slice:hover {
+  opacity: 0.9;
+  filter: brightness(1.05);
+}
+
+/* Legend */
+.uedp-productivity-card__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.uedp-productivity-card__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  color: #0F172A;
+  white-space: nowrap;
+}
+
+.uedp-productivity-card__legend-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--uedp-rounded-sm, 2px);
+  flex-shrink: 0;
+}
+
+.uedp-productivity-card__legend-label {
+  line-height: 1.3;
+}
+
+.uedp-productivity-card__legend-value {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+/* Dark theme variation */
+.uedp-productivity-card--dark {
+  background-color: #18181B;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.uedp-productivity-card--dark .uedp-productivity-card__title {
+  color: #F8FAFC;
+}
+
+.uedp-productivity-card--dark .uedp-productivity-card__legend-item {
+  color: #F1F5F9;
+}

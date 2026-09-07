@@ -8,3 +8,4 @@ export * from './components/OrderTableRow/OrderTableRow';
 export * from './components/StatusBadge/StatusBadge';
 export * from './components/UserTableRow/UserTableRow';
 export * from './components/StatusTag/StatusTag';
+export * from './components/ProductivityCard/ProductivityCard';
