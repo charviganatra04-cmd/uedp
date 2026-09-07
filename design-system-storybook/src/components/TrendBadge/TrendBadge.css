@@ -1,0 +1,94 @@
+/* Figma Node: node-id=66-149 */
+/* Component: TrendBadge (Stat / Delta indicator badge) */
+
+.uedp-trend-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+/* Rounded variations mapped to foundational tokens */
+.uedp-trend-badge--rounded-lg {
+  border-radius: var(--uedp-rounded-lg, 8px);
+}
+
+.uedp-trend-badge--rounded-xl {
+  border-radius: var(--uedp-rounded-xl, 12px);
+}
+
+.uedp-trend-badge--rounded-2xl {
+  border-radius: var(--uedp-rounded-2xl, 16px);
+}
+
+.uedp-trend-badge--rounded-full {
+  border-radius: var(--uedp-rounded-full, 9999px);
+}
+
+/* Sizes */
+.uedp-trend-badge--sm {
+  font-size: 0.8125rem; /* 13px */
+  padding: 4px 10px;
+  gap: var(--uedp-gap-0-5, 2px);
+}
+
+.uedp-trend-badge--md {
+  font-size: 1.125rem; /* 18px matching Figma node 66-149 */
+  padding: 8px 16px;
+  gap: var(--uedp-gap-1, 4px);
+}
+
+.uedp-trend-badge--lg {
+  font-size: 1.375rem; /* 22px */
+  padding: 10px 20px;
+  gap: var(--uedp-gap-1-5, 6px);
+}
+
+/* Variant: Positive (Top pill in node-id=66-149) */
+.uedp-trend-badge--positive {
+  background-color: var(--uedp-green-100, #DCFCE7);
+  color: var(--uedp-green-800, #166534);
+}
+
+.uedp-trend-badge--positive:hover {
+  background-color: var(--uedp-green-200, #BBF7D0);
+}
+
+/* Variant: Negative (Bottom pill in node-id=66-149) */
+.uedp-trend-badge--negative {
+  background-color: var(--uedp-red-100, #FEE2E2);
+  color: var(--uedp-red-950, #450A0A);
+}
+
+.uedp-trend-badge--negative:hover {
+  background-color: var(--uedp-red-200, #FECACA);
+}
+
+/* Variant: Neutral */
+.uedp-trend-badge--neutral {
+  background-color: var(--uedp-gray-100, #F3F4F6);
+  color: var(--uedp-gray-800, #1F2937);
+}
+
+.uedp-trend-badge--neutral:hover {
+  background-color: var(--uedp-gray-200, #E5E7EB);
+}
+
+/* Icon */
+.uedp-trend-badge__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.uedp-trend-badge__icon svg {
+  width: 1em;
+  height: 1em;
+}
