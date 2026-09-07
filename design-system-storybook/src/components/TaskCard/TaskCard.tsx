@@ -63,17 +63,27 @@ export interface TaskCardProps extends React.HTMLAttributes<HTMLDivElement> {
    * @default true
    */
   clickable?: boolean;
+  /**
+   * Optional custom Figma Node ID (defaults to 94-910 for Active / 94-938 for On Hold).
+   */
+  figmaNode?: string;
+  /**
+   * Optional custom Figma Layer name (defaults to Frame 93 for Active / Frame 94 for On Hold).
+   */
+  figmaLayer?: string;
 }
 
 export const defaultJohnMitchellAvatar =
   'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&auto=format&fit=crop&q=80';
 
 /**
- * TaskCard Component ("Frame 94")
+ * TaskCard Component ("Frame 93" & "Frame 94")
  *
- * Synchronized from Figma canvas node: `node-id=94-938` (Layer: `Frame 94`)
+ * Synchronized from Figma canvas nodes:
+ * - `node-id=94-910` (Layer: `Frame 93`, "Active" status)
+ * - `node-id=94-938` (Layer: `Frame 94`, "On Hold" status)
  * High-fidelity task assignment and follow-up card displaying assignee identity,
- * status badge ("On Hold"), task description, due date, and time-left indicator.
+ * status badge ("Active" / "On Hold"), task description, due date, and time-left indicator.
  */
 export const TaskCard = forwardRef<HTMLDivElement, TaskCardProps>(
   (
@@ -89,6 +99,8 @@ export const TaskCard = forwardRef<HTMLDivElement, TaskCardProps>(
       timeLeft = '2 days left',
       theme = 'light',
       clickable = true,
+      figmaNode,
+      figmaLayer,
       className = '',
       ...rest
     },
@@ -106,14 +118,17 @@ export const TaskCard = forwardRef<HTMLDivElement, TaskCardProps>(
         .toUpperCase() ||
       'JM';
 
+    const resolvedFigmaNode = figmaNode || (statusVariant === 'active' || status === 'Active' ? '94-910' : '94-938');
+    const resolvedFigmaLayer = figmaLayer || (statusVariant === 'active' || status === 'Active' ? 'Frame 93' : 'Frame 94');
+
     return (
       <div
         ref={ref}
         className={`uedp-task-card uedp-task-card--${theme} ${
           clickable ? 'uedp-task-card--clickable' : ''
         } ${className}`.trim()}
-        data-figma-node="94-938"
-        data-figma-layer="Frame 94"
+        data-figma-node={resolvedFigmaNode}
+        data-figma-layer={resolvedFigmaLayer}
         {...rest}
       >
         {/* Top Header: Assignee Identity & Status Badge */}
@@ -181,3 +196,5 @@ export const AssignmentCard = TaskCard;
 export const FollowUpCard = TaskCard;
 export const TaskDetailCard = TaskCard;
 export const Frame94 = TaskCard;
+export const Frame93 = TaskCard;
+export const TaskCardActive = TaskCard;

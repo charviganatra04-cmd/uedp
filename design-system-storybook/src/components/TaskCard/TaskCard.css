@@ -112,8 +112,8 @@
 }
 
 .uedp-task-card__status-badge--active {
-  background-color: #16A34A;
-  color: #FFFFFF;
+  background-color: #E6F8ED;
+  color: #15803D;
 }
 
 .uedp-task-card__status-badge--pending {

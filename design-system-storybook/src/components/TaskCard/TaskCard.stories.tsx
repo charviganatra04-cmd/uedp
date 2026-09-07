@@ -96,10 +96,45 @@ export const Default: Story = {
 };
 
 /**
+ * Exact visual reproduction of Figma Node 94-910 (Frame 93 - Active) on dark canvas
+ */
+export const FigmaNode94910Canvas: Story = {
+  name: 'Figma Node 94-910 (Frame 93 - Active)',
+  render: () => (
+    <div
+      style={{
+        backgroundColor: '#1E1E1E',
+        padding: '36px 40px',
+        borderRadius: '24px',
+        display: 'inline-flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        gap: '12px',
+        boxShadow: '0 12px 32px rgba(0, 0, 0, 0.5)',
+      }}
+    >
+      <div style={{ color: '#A1A1AA', fontSize: '12px', fontWeight: 600, letterSpacing: '0.04em' }}>
+        ❖ Frame 93 (Node: 94-910)
+      </div>
+      <TaskCard
+        assigneeName="John Mitchell"
+        assigneeRole="Sales Executive"
+        assigneeAvatar={defaultJohnMitchellAvatar}
+        status="Active"
+        statusVariant="active"
+        description="Follow up with Green Valley Supplies regarding pending order confirmation and delivery schedule."
+        dueDate="Due: Dec 5"
+        timeLeft="2 days left"
+      />
+    </div>
+  ),
+};
+
+/**
  * Exact visual reproduction of Figma Node 94-938 on dark canvas
  */
 export const FigmaNode94938Canvas: Story = {
-  name: 'Figma Node 94-938 (Frame 94)',
+  name: 'Figma Node 94-938 (Frame 94 - On Hold)',
   render: () => (
     <div
       style={{
