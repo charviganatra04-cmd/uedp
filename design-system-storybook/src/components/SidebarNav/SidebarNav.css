@@ -1,0 +1,172 @@
+/* Figma Node: node-id=90-433 */
+/* Component: SidebarNav (Sidebar Navigation Menu) */
+
+.uedp-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-radius: var(--uedp-rounded-2xl, 16px);
+  padding: 24px 16px;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.uedp-sidebar-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uedp-sidebar-nav__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Nav Link Button */
+.uedp-sidebar-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  background-color: transparent;
+  border-radius: var(--uedp-rounded-lg, 10px);
+  color: #5A6A85;
+  font-family: inherit;
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.12s ease;
+  position: relative;
+  outline: none;
+}
+
+.uedp-sidebar-nav__link:hover {
+  background-color: var(--uedp-slate-50, #F8FAFC);
+  color: #1E293B;
+}
+
+.uedp-sidebar-nav__link:focus-visible {
+  outline: 2px solid var(--uedp-primary-500, #3B82F6);
+  outline-offset: 2px;
+}
+
+/* Active Item State (Faithfully matching "Dashboard" in Figma 90-433) */
+.uedp-sidebar-nav__link--active {
+  color: #0F172A;
+  font-weight: 700;
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+.uedp-sidebar-nav__link--active:hover {
+  background-color: rgba(15, 23, 42, 0.06);
+  color: #0F172A;
+}
+
+/* Icon Container */
+.uedp-sidebar-nav__icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.uedp-sidebar-nav__icon {
+  display: block;
+  color: inherit;
+  transition: transform 0.15s ease;
+}
+
+.uedp-sidebar-nav__link:hover .uedp-sidebar-nav__icon {
+  transform: scale(1.08);
+}
+
+/* Label */
+.uedp-sidebar-nav__label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+
+/* Badge count indicator */
+.uedp-sidebar-nav__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  background-color: var(--uedp-primary-50, #EFF6FF);
+  color: var(--uedp-primary-700, #1D4ED8);
+  margin-left: auto;
+}
+
+/* Disabled State */
+.uedp-sidebar-nav__link--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.uedp-sidebar-nav__link--disabled:hover {
+  background-color: transparent;
+  color: #5A6A85;
+}
+
+/* Collapsed Icon-Only Mode */
+.uedp-sidebar-nav--collapsed {
+  max-width: 76px;
+  padding: 24px 8px;
+  align-items: center;
+}
+
+.uedp-sidebar-nav--collapsed .uedp-sidebar-nav__link {
+  justify-content: center;
+  padding: 12px;
+  gap: 0;
+}
+
+/* Dark theme mode */
+.uedp-sidebar-nav--dark {
+  background-color: #0F172A;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.uedp-sidebar-nav--dark .uedp-sidebar-nav__link {
+  color: #94A3B8;
+}
+
+.uedp-sidebar-nav--dark .uedp-sidebar-nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #F8FAFC;
+}
+
+.uedp-sidebar-nav--dark .uedp-sidebar-nav__link--active {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.uedp-sidebar-nav--dark .uedp-sidebar-nav__link--active:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+}
+
+.uedp-sidebar-nav--dark .uedp-sidebar-nav__badge {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #93C5FD;
+}
