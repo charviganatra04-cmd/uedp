@@ -1,0 +1,218 @@
+/* Figma Node: node-id=90-435 */
+/* Component: UserProfileCard (Alex Morgan - Regional Manager) */
+
+.uedp-user-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-radius: var(--uedp-rounded-xl, 12px);
+  padding: 10px 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: var(--uedp-slate-900, #0F172A);
+  width: 100%;
+  max-width: 280px;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.12s ease;
+  position: relative;
+}
+
+/* Clickable Interactive State */
+.uedp-user-profile-card--clickable {
+  cursor: pointer;
+  outline: none;
+}
+
+.uedp-user-profile-card--clickable:hover {
+  background-color: var(--uedp-slate-50, #F8FAFC);
+}
+
+.uedp-user-profile-card--clickable:focus-visible {
+  outline: 2px solid var(--uedp-primary-500, #3B82F6);
+  outline-offset: 2px;
+}
+
+/* Avatar Wrapper */
+.uedp-user-profile-card__avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.uedp-user-profile-card__avatar-img {
+  display: block;
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.uedp-user-profile-card__avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+/* Presence Status Dot */
+.uedp-user-profile-card__status-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 9999px;
+  border: 2px solid #FFFFFF;
+  box-sizing: content-box;
+}
+
+.uedp-user-profile-card__status-dot--online {
+  background-color: #22C55E;
+}
+
+.uedp-user-profile-card__status-dot--busy {
+  background-color: #EF4444;
+}
+
+.uedp-user-profile-card__status-dot--away {
+  background-color: #F59E0B;
+}
+
+.uedp-user-profile-card__status-dot--offline {
+  background-color: #94A3B8;
+}
+
+/* Content Details */
+.uedp-user-profile-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  flex: 1;
+}
+
+.uedp-user-profile-card__name {
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 700;
+  color: #0F172A;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.01em;
+}
+
+.uedp-user-profile-card__role {
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 500;
+  color: #708090;
+  line-height: 1.25;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Trailing Action */
+.uedp-user-profile-card__action {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748B;
+  flex-shrink: 0;
+}
+
+/* Size Variants */
+/* Medium (Default Figma Node 90-435) */
+.uedp-user-profile-card--md .uedp-user-profile-card__avatar-img,
+.uedp-user-profile-card--md .uedp-user-profile-card__avatar-fallback {
+  width: 40px;
+  height: 40px;
+  font-size: 0.875rem;
+}
+
+.uedp-user-profile-card--md .uedp-user-profile-card__status-dot {
+  width: 9px;
+  height: 9px;
+}
+
+/* Small (Compact) */
+.uedp-user-profile-card--sm {
+  padding: 6px 10px;
+  gap: 10px;
+}
+
+.uedp-user-profile-card--sm .uedp-user-profile-card__avatar-img,
+.uedp-user-profile-card--sm .uedp-user-profile-card__avatar-fallback {
+  width: 32px;
+  height: 32px;
+  font-size: 0.75rem;
+}
+
+.uedp-user-profile-card--sm .uedp-user-profile-card__name {
+  font-size: 0.875rem; /* 14px */
+}
+
+.uedp-user-profile-card--sm .uedp-user-profile-card__role {
+  font-size: 0.75rem; /* 12px */
+}
+
+.uedp-user-profile-card--sm .uedp-user-profile-card__status-dot {
+  width: 7px;
+  height: 7px;
+}
+
+/* Large (Prominent) */
+.uedp-user-profile-card--lg {
+  padding: 14px 18px;
+  gap: 16px;
+}
+
+.uedp-user-profile-card--lg .uedp-user-profile-card__avatar-img,
+.uedp-user-profile-card--lg .uedp-user-profile-card__avatar-fallback {
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+}
+
+.uedp-user-profile-card--lg .uedp-user-profile-card__name {
+  font-size: 1.0625rem; /* 17px */
+}
+
+.uedp-user-profile-card--lg .uedp-user-profile-card__role {
+  font-size: 0.875rem; /* 14px */
+}
+
+.uedp-user-profile-card--lg .uedp-user-profile-card__status-dot {
+  width: 11px;
+  height: 11px;
+}
+
+/* Dark Theme */
+.uedp-user-profile-card--dark {
+  background-color: #18181B;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.uedp-user-profile-card--dark.uedp-user-profile-card--clickable:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.uedp-user-profile-card--dark .uedp-user-profile-card__name {
+  color: #F8FAFC;
+}
+
+.uedp-user-profile-card--dark .uedp-user-profile-card__role {
+  color: #94A3B8;
+}
+
+.uedp-user-profile-card--dark .uedp-user-profile-card__status-dot {
+  border-color: #18181B;
+}
+
+.uedp-user-profile-card--dark .uedp-user-profile-card__action {
+  color: #94A3B8;
+}
