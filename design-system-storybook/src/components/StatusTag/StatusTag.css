@@ -1,0 +1,67 @@
+/* Figma Node: node-id=78-276 (Layer: "Background" / 3 Variants) */
+/* Component: StatusTag (Operational State Pill: Active, Deactive, On Hold) */
+
+.uedp-status-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: var(--uedp-rounded-xl, 12px);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+/* Sizes */
+.uedp-status-tag--sm {
+  font-size: 0.875rem; /* 14px */
+  padding: 6px 14px;
+}
+
+.uedp-status-tag--md {
+  font-size: 1.125rem; /* 18px - matches Figma node 78-276 */
+  padding: 10px 22px;
+}
+
+.uedp-status-tag--lg {
+  font-size: 1.25rem; /* 20px */
+  padding: 12px 28px;
+}
+
+/* 3 Variants matching Figma "Background" (Node 78-276) */
+
+/* Variant 1: Active (Light green background, deep forest green text) */
+.uedp-status-tag--active {
+  background-color: var(--uedp-green-100, #DCFCE7);
+  color: var(--uedp-green-800, #166534);
+}
+
+.uedp-status-tag--active:hover {
+  background-color: var(--uedp-green-200, #BBF7D0);
+}
+
+/* Variant 2: Deactive (Coral red background, deep dark crimson text) */
+.uedp-status-tag--deactive {
+  background-color: var(--uedp-red-400, #F87171);
+  color: var(--uedp-red-950, #450A0A);
+}
+
+.uedp-status-tag--deactive:hover {
+  background-color: var(--uedp-red-500, #EF4444);
+  color: var(--uedp-base-white, #FFFFFF);
+}
+
+/* Variant 3: On Hold (Cool medium slate background, charcoal text) */
+.uedp-status-tag--on-hold {
+  background-color: var(--uedp-slate-400, #94A3B8);
+  color: var(--uedp-slate-900, #0F172A);
+}
+
+.uedp-status-tag--on-hold:hover {
+  background-color: var(--uedp-slate-300, #CBD5E1);
+}
