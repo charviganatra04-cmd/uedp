@@ -1,0 +1,101 @@
+/* Figma Node: node-id=104-1069 (Layer: "Frame 102") */
+/* Component: StatusBadge (Status / Discount / Category Pill Tag) */
+
+.uedp-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: var(--uedp-rounded-xl, 12px);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+/* Sizes */
+.uedp-status-badge--sm {
+  font-size: 0.75rem; /* 12px */
+  padding: 4px 10px;
+  gap: 4px;
+}
+
+.uedp-status-badge--md {
+  font-size: 1rem; /* 16px - matches Figma node 104-1069 */
+  padding: 8px 16px;
+  gap: 6px;
+}
+
+.uedp-status-badge--lg {
+  font-size: 1.125rem; /* 18px */
+  padding: 10px 20px;
+  gap: 8px;
+}
+
+/* Color Variants bound to Figma Tokens (Matching Frame 102) */
+
+/* Variant 1: Purple / Discount (Top 2 states in Frame 102 - "Bulk Discount") */
+.uedp-status-badge--purple {
+  background-color: var(--uedp-violet-200, #DDD6FE);
+  color: var(--uedp-violet-900, #4C1D95);
+}
+
+.uedp-status-badge--purple:hover {
+  background-color: var(--uedp-violet-300, #C4B5FD);
+}
+
+/* Variant 2: Deactive / Slate (Bottom state in Frame 102 - "Deactive") */
+.uedp-status-badge--deactive {
+  background-color: var(--uedp-slate-200, #E2E8F0);
+  color: var(--uedp-slate-600, #475569);
+}
+
+.uedp-status-badge--deactive:hover {
+  background-color: var(--uedp-slate-300, #CBD5E1);
+}
+
+/* Additional design system status variants */
+
+/* Variant: Active / Success */
+.uedp-status-badge--active {
+  background-color: var(--uedp-green-100, #DCFCE7);
+  color: var(--uedp-green-800, #166534);
+}
+
+/* Variant: Blue / Info */
+.uedp-status-badge--blue {
+  background-color: var(--uedp-blue-100, #DBEAFE);
+  color: var(--uedp-blue-800, #1E40AF);
+}
+
+/* Variant: Amber / Warning */
+.uedp-status-badge--amber {
+  background-color: var(--uedp-amber-100, #FEF3C7);
+  color: var(--uedp-amber-800, #92400E);
+}
+
+/* Variant: Red / Danger */
+.uedp-status-badge--red {
+  background-color: var(--uedp-red-100, #FEE2E2);
+  color: var(--uedp-red-800, #991B1B);
+}
+
+/* Variant: Neutral / Gray */
+.uedp-status-badge--neutral {
+  background-color: var(--uedp-gray-100, #F3F4F6);
+  color: var(--uedp-gray-700, #374151);
+}
+
+/* Optional Status Indicator Dot */
+.uedp-status-badge__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+  display: inline-block;
+  flex-shrink: 0;
+}
