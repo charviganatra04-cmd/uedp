@@ -1,0 +1,155 @@
+/* Figma Node: node-id=92-590 */
+/* Component: TaskDistributionCard ("Task Distribution") */
+
+.uedp-task-distribution-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--uedp-base-white, #FFFFFF);
+  border-radius: var(--uedp-rounded-3xl, 24px);
+  padding: 32px 36px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-family: inherit;
+  color: var(--uedp-slate-900, #0F172A);
+  width: 100%;
+  max-width: 490px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uedp-task-distribution-card:hover {
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Header */
+.uedp-task-distribution-card__header {
+  margin-bottom: 24px;
+}
+
+.uedp-task-distribution-card__title {
+  font-size: 1.625rem; /* 26px */
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Content Body (Pie Chart + Legend) */
+.uedp-task-distribution-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  position: relative;
+}
+
+/* Chart Canvas Wrapper */
+.uedp-task-distribution-card__chart-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+}
+
+.uedp-task-distribution-card__svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.04));
+}
+
+.uedp-task-distribution-card__slice {
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), filter 0.18s ease;
+  transform-origin: 110px 110px;
+}
+
+.uedp-task-distribution-card__slice:hover,
+.uedp-task-distribution-card__slice--hovered {
+  opacity: 0.95;
+  filter: brightness(1.08);
+  transform: scale(1.03);
+}
+
+/* Legend */
+.uedp-task-distribution-card__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.uedp-task-distribution-card__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  color: #0F172A;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.uedp-task-distribution-card__legend-item:hover,
+.uedp-task-distribution-card__legend-item--hovered {
+  background-color: rgba(0, 0, 0, 0.03);
+  transform: translateX(4px);
+}
+
+.uedp-task-distribution-card__legend-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--uedp-rounded-sm, 2px);
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.uedp-task-distribution-card__legend-label {
+  line-height: 1.3;
+}
+
+.uedp-task-distribution-card__legend-value {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: #64748B;
+  font-weight: 500;
+  padding-left: 8px;
+}
+
+/* Dark theme variation */
+.uedp-task-distribution-card--dark {
+  background-color: #18181B;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.uedp-task-distribution-card--dark .uedp-task-distribution-card__title {
+  color: #F8FAFC;
+}
+
+.uedp-task-distribution-card--dark .uedp-task-distribution-card__legend-item {
+  color: #F1F5F9;
+}
+
+.uedp-task-distribution-card--dark .uedp-task-distribution-card__legend-item:hover,
+.uedp-task-distribution-card--dark .uedp-task-distribution-card__legend-item--hovered {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.uedp-task-distribution-card--dark .uedp-task-distribution-card__legend-value {
+  color: #94A3B8;
+}
+
+/* Responsive collapse on narrow viewports */
+@media (max-width: 480px) {
+  .uedp-task-distribution-card__body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .uedp-task-distribution-card__legend {
+    width: 100%;
+  }
+}
