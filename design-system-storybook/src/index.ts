@@ -6,3 +6,4 @@ export * from './components/MetricAvatar/MetricAvatar';
 export * from './components/MetricStat/MetricStat';
 export * from './components/OrderTableRow/OrderTableRow';
 export * from './components/StatusBadge/StatusBadge';
+export * from './components/UserTableRow/UserTableRow';
