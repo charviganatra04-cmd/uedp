@@ -1,0 +1,158 @@
+/* Figma Node: node-id=70-21 */
+/* Component: IconBadge (Circular metric & feature icon container) */
+
+.uedp-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Shapes */
+.uedp-icon-badge--circle {
+  border-radius: var(--uedp-rounded-full, 9999px);
+}
+
+.uedp-icon-badge--rounded {
+  border-radius: var(--uedp-rounded-xl, 12px);
+}
+
+.uedp-icon-badge--square {
+  border-radius: var(--uedp-rounded-md, 6px);
+}
+
+/* Sizes */
+.uedp-icon-badge--sm {
+  width: 36px;
+  height: 36px;
+}
+
+.uedp-icon-badge--sm svg,
+.uedp-icon-badge--sm .uedp-icon-badge__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.uedp-icon-badge--md {
+  width: 48px;
+  height: 48px;
+}
+
+.uedp-icon-badge--md svg,
+.uedp-icon-badge--md .uedp-icon-badge__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.uedp-icon-badge--lg {
+  width: 56px;
+  height: 56px;
+}
+
+.uedp-icon-badge--lg svg,
+.uedp-icon-badge--lg .uedp-icon-badge__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.uedp-icon-badge--xl {
+  width: 64px;
+  height: 64px;
+}
+
+.uedp-icon-badge--xl svg,
+.uedp-icon-badge--xl .uedp-icon-badge__icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Color Variants bound to Figma Design Tokens */
+
+/* Variant: Cyan (Node 70-21 Circle 1 - Package) */
+.uedp-icon-badge--cyan {
+  background-color: var(--uedp-cyan-100, #CFFAFE);
+  color: var(--uedp-cyan-900, #164E63);
+}
+
+.uedp-icon-badge--cyan:hover {
+  background-color: var(--uedp-cyan-200, #A5F3FC);
+}
+
+/* Variant: Red / Rose (Node 70-21 Circle 2 - Document) */
+.uedp-icon-badge--red {
+  background-color: var(--uedp-red-100, #FEE2E2);
+  color: var(--uedp-red-900, #7F1D1D);
+}
+
+.uedp-icon-badge--red:hover {
+  background-color: var(--uedp-red-200, #FECACA);
+}
+
+/* Variant: Green (Node 70-21 Circle 3 - Clock) */
+.uedp-icon-badge--green {
+  background-color: var(--uedp-green-100, #DCFCE7);
+  color: var(--uedp-green-800, #166534);
+}
+
+.uedp-icon-badge--green:hover {
+  background-color: var(--uedp-green-200, #BBF7D0);
+}
+
+/* Variant: Blue / Sky (Node 70-21 Circle 4 - Users) */
+.uedp-icon-badge--blue {
+  background-color: var(--uedp-sky-100, #E0F2FE);
+  color: var(--uedp-blue-900, #1E3A8A);
+}
+
+.uedp-icon-badge--blue:hover {
+  background-color: var(--uedp-sky-200, #BAE6FD);
+}
+
+/* Variant: Amber / Warning */
+.uedp-icon-badge--amber {
+  background-color: var(--uedp-amber-100, #FEF3C7);
+  color: var(--uedp-amber-900, #78350F);
+}
+
+.uedp-icon-badge--amber:hover {
+  background-color: var(--uedp-amber-200, #FDE68A);
+}
+
+/* Variant: Purple */
+.uedp-icon-badge--purple {
+  background-color: var(--uedp-violet-100, #EDE9FE);
+  color: var(--uedp-violet-900, #4C1D95);
+}
+
+.uedp-icon-badge--purple:hover {
+  background-color: var(--uedp-violet-200, #DDD6FE);
+}
+
+/* Variant: Neutral / Gray */
+.uedp-icon-badge--neutral {
+  background-color: var(--uedp-gray-100, #F3F4F6);
+  color: var(--uedp-gray-800, #1F2937);
+}
+
+.uedp-icon-badge--neutral:hover {
+  background-color: var(--uedp-gray-200, #E5E7EB);
+}
+
+/* Icon inner container */
+.uedp-icon-badge__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  stroke-width: 2px;
+}
+
+.uedp-icon-badge__icon svg {
+  display: block;
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
